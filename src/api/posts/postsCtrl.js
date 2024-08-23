@@ -47,7 +47,7 @@ exports.uploadImage = async (ctx) => {
         ctx.body = { message: 'No file uploaded' };
         return;
     }
-    const IMG_URL = `http://localhost:4000/uploads/${file.filename}`;
+    const IMG_URL = `https://improved-henka-twtwkim-e27780f6.koyeb.app/uploads/${file.filename}`;
     ctx.body = { url: IMG_URL };
     console.log(IMG_URL);
 };
