@@ -108,7 +108,7 @@ exports.callback = async (ctx) => {
             new URLSearchParams({
                 grant_type: 'authorization_code',
                 client_id: '9b7f802008f3c0eb4e70bb5e0b6a035b',
-                redirect_uri: "http://localhost:5173/auth/kakao/callback",
+                redirect_uri: "https://playful-semolina-7b465a.netlify.app/auth/kakao/callback",
                 code
             }),
             {
