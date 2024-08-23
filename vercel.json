@@ -1,21 +1,21 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "src/index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "src/index.js"
-      },
-      {
-        "src": "/uploads/(.*)",
-        "dest": "src/index.js"
-      }
-    ],
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/api/$1"
+    },
+    {
+      "src": "/uploads/(.*)",
+      "dest": "/uploads/$1"
+    }
+  ],
     "env": {
       "PORT": "4000",
       "MONGO_URI": "mongodb://blogblog:1234@43.203.206.114:27017/admin",
